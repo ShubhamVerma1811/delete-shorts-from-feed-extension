@@ -6,6 +6,7 @@ Loading the extension:
 ## Chromium Browsers
 
 - Go to `brave://extensions/` or `chrome://extensions/`
+- Enable `Developer Mode`
 - Click `Load Unpacked`
 - Select this extension's folder.
 - Ignore the manifest 2 error on load.
