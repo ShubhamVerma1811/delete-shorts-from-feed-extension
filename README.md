@@ -3,6 +3,12 @@ Might not work all the time, so feel free to contribute.
 
 Loading the extension:
 
+## Firefox
+
+- Download it from https://addons.mozilla.org/en-US/firefox/addon/delete-shorts-from-yt-feed
+
+---
+
 ## Chromium Browsers
 
 - Go to `brave://extensions/` or `chrome://extensions/`
@@ -12,10 +18,5 @@ Loading the extension:
 - Ignore the manifest 2 error on load.
   https://webkul.com/blog/how-to-install-the-unpacked-extension-in-chrome/
 
-## Firefox
-
-- Navigate to `about:debugging#/runtime/this-firefox`
-- Click `Load Temporary Add-on`
-- Select `manifest.json` from this extension's folder.
 
 ---
