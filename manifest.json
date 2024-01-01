@@ -9,5 +9,5 @@
   "description": "Deletes YT shorts from YT Feed.",
   "manifest_version": 2,
   "name": "Delete Shorts From YT Feed",
-  "version": "1.0.0"
+  "version": "1.0.1"
 }
