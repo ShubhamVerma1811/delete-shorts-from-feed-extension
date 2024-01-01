@@ -1,11 +1,23 @@
-function deleteShortsFromFeed() {
-  // const shorts = [...document.querySelectorAll('a[href^="/shorts/"]')]
-  //   ?.filter((a) => a?.id === 'thumbnail')
-  //   ?.map((i) => i?.parentElement?.parentElement?.parentElement?.parentElement?.parentElement);
+/**
+ *
+ * @returns {HTMLElement[]}
+ */
+function getShorts() {
+  let shorts = [].concat(
+    Array.from(document.querySelectorAll('a[href^="/shorts/"]'))
+      ?.filter((a) => a?.id === "thumbnail")
+      ?.map((i) => i?.parentElement?.parentElement?.parentElement),
+    Array.from(document.querySelectorAll("[is-shorts]"))
+  )
 
-  const shorts = [...document.querySelectorAll("[is-shorts]")]
+  return shorts
+}
+
+function deleteShortsFromFeed() {
+  const shorts = getShorts()
+
   shorts?.forEach((short) => {
-    short.style.display = "none"
+    short.remove()
   })
 }
 
